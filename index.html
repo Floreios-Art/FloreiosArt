@@ -6,284 +6,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#fff2eb">
   <meta name="description"
-    content="Papelaria artesanal para quem ama livros. Conheça os marcadores, cadernos e kits literários da Floreios Art.">
-  <title>Floreios Art — Loja Literária</title>
-  <link rel="shortcut icon" href="/FloreiosArt/logos/selofloreios.png" type="image/x-icon">
+    content="Papelaria artesanal para quem ama livros. Encontre ecobags, xícaras, adesivos, kits e pequenos presentes literários na Floreios Art.">
+  <title>Floreios Art — Papelaria para quem ama livros</title>
+  <link rel="icon" href="logos/selofloreios.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
+  <script src="store.js" defer></script>
 </head>
 
-<body>
+<body data-page="inicio">
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Floreios Art, página inicial">
-      <img src="/FloreiosArt/logos/logoprincipal.png" alt="Floreios Art" class="brand-subtitle brand-name">
-    </a>
+    <a class="brand" href="index.html" aria-label="Floreios Art, início"><img src="logos/logoprincipal.png"
+        alt="Floreios Art" class="brand-name"></a>
     <nav class="main-nav" aria-label="Navegação principal">
-      <a class="active" href="#inicio">Início</a>
-      <a href="#colecoes">Coleções</a>
-      <a href="#produtos">Kits</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#sobre">Sobre Nós</a>
+      <a class="active" href="index.html" aria-current="page">Início</a><a href="colecoes.html">Coleções</a><a
+        href="produtos.html">Produtos</a><a href="kits.html">Kits & presentes</a><a href="sobre.html">Sobre</a><a
+        href="contato.html">Contato</a>
     </nav>
-    <div class="header-actions" aria-label="Ações da loja">
-      <a href="#produtos" aria-label="Buscar produtos"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="10.8" cy="10.8" r="6.3"></circle>
-          <path d="m16 16 4.1 4.1"></path>
-        </svg></a>
-      <a href="#produtos" aria-label="Favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10a4.2 4.2 0 0 1 8.5-.4 4.2 4.2 0 0 1 8.5.4Z"></path>
-        </svg></a>
-      <a class="bag-link" href="#produtos" aria-label="Sacola de compras"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M5 8h14l1 12H4L5 8Z"></path>
-          <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
-        </svg><span>0</span></a>
-    </div>
+    <div class="header-actions"><a class="header-contact" href="https://www.instagram.com/floreiosart/" target="_blank"
+        rel="noopener noreferrer">Fale com a gente <span aria-hidden="true">↗</span></a></div>
   </header>
 
   <main>
-    <div id="inicio" class="banner-carousel" role="region" aria-label="Banners da Floreios Art">
+    <section id="inicio" class="banner-carousel" role="region" aria-label="Destaques da Floreios Art">
       <div class="banner-carousel__slides">
-        <div class="banner-slide active" aria-hidden="false">
-          <img src="/FloreiosArt/produtos/1.png" alt="Banner do Clube Floreios Art com produtos literários">
-        </div>
-        <div class="banner-slide" aria-hidden="true">
-          <img src="/FloreiosArt/produtos/2.png" alt="Banner do Clube Floreios Art com adesivos e produtos de leitura">
-        </div>
+        <div class="banner-slide active" aria-hidden="false"><img src="produtos/1.png"
+            alt="Clube Floreios: acessórios literários para deixar sua leitura ainda mais especial"></div>
+        <div class="banner-slide" aria-hidden="true"><img src="produtos/2.png"
+            alt="Coleção de adesivos literários para Kindle e livros"></div>
       </div>
-      <a class="button button-orange banner-cta" href="#colecoes">Conhecer a loja <span class="arrow"
+      <a class="button button-orange banner-cta" href="colecoes.html">Explore a loja <span class="arrow"
           aria-hidden="true"></span></a>
-    </div>
-    <section class="benefits" aria-label="Vantagens da Floreios Art"></span>
+    </section>
+
+    <section class="benefits" aria-label="O carinho Floreios">
+      <div class="benefit"><span class="benefit-icon" aria-hidden="true">✿</span>
+        <div><strong>Feito com carinho</strong><small>Detalhes pensados por leitoras</small></div>
       </div>
-      <div class="benefit"><span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
-            <path d="m7 4 10 16M5 8l4-4M15 20l4-4M8 9l3-3"></path>
-          </svg></span>
-        <div><strong>Produtos artesanais</strong><small>Feitos com carinho</small></div>
+      <div class="benefit"><span class="benefit-icon" aria-hidden="true">♡</span>
+        <div><strong>Um mimo em cada pedido</strong><small>Um carinho junto com sua compra</small></div>
       </div>
-      <div class="benefit"><span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
-            <path
-              d="M4 11h16v9H4zM3 7h18v4H3zM12 7v13M12 7H8.5a2.5 2.5 0 1 1 2.5-2.5V7ZM12 7h3.5A2.5 2.5 0 1 0 13 4.5V7Z">
-            </path>
-          </svg></span>
-        <div><strong>Um mimo em cada pedido</strong><small>Um pequeno carinho no pacote</small></div>
-      </div>
-      <div class="benefit"><span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
-            <path d="M3 7h11v11H3zM14 11h4l3 3v4h-7z"></path>
-            <circle cx="7.5" cy="19" r="1.5"></circle>
-            <circle cx="18" cy="19" r="1.5"></circle>
-          </svg></span>
-        <div><strong>Envio para todo o Brasil</strong><small>Consulte as opções de frete</small></div>
+      <div class="benefit"><span class="benefit-icon" aria-hidden="true">✉</span>
+        <div><strong>Envio para todo o Brasil</strong><small>Consulte frete e prazo pelo Instagram</small></div>
       </div>
     </section>
 
-    <section class="collections section-shell" id="colecoes">
-      <div class="section-heading centered">
-        <span class="eyebrow pink">Explore Floreios</span>
-        <h2>Pequenos detalhes para suas leituras</h2>
-        <p>Ecobags, xícaras e outras companhias para os livros que você ama.</p>
+    <section class="home-collections section-shell">
+      <div class="section-heading centered"><span class="eyebrow pink">Um mundo de detalhes</span>
+        <h1>Pequenos encantos para grandes histórias</h1>
+        <p>Encontre uma companhia especial para seus livros, sua bolsa e seus momentos de leitura.</p>
       </div>
       <div class="collection-grid">
-        <a class="collection-card" href="#produtos">
-          <img src="/FloreiosArt/produtos/ecobag book love.png" alt="Livros e itens de papelaria sobre uma mesa">
-          <span class="count">2 modelos</span>
-          <span class="collection-caption"><strong>Eco Bags</strong>
-            <small>Ver coleção</small>
-          </span>
-        </a>
-        <a class="collection-card" href="#produtos"><img src="/FloreiosArt/produtos/xicara leitoras club.jpeg"
-            alt="Livro aberto com ilustração delicada"><span class="count">2 artes</span><span
-            class="collection-caption"><strong>Xícaras</strong><small>Ver coleção</small></span></a>
-        <a class="collection-card" href="#produtos"><img src="/FloreiosArt/produtos/chaveiro fofo.png"
-            alt="Caderno e livros em tons quentes"><span class="collection-caption"><strong>Chaveiro</strong><small>Ver
-              coleção</small></span></a>
-        <a class="collection-card" href="#produtos"><img src="/FloreiosArt/produtos/skin card.png"
-            alt="Livros empilhados em um cantinho aconchegante"><span class="count">7 opções</span><span
-            class="collection-caption"><strong>Skincard</strong><small>Ver coleção</small></span></a>
-        <a class="collection-card" href="#produtos"><img src="/FloreiosArt/produtos/kindle com adesivos.png"
-            alt="Coleção de livros e pequenos objetos"><span class="count">5 Modelos</span><span
-            class="collection-caption"><strong>Adesivos</strong><small>Ver coleção</small></span></a>
+        <a class="collection-card" href="colecoes.html#ecobags"><img src="produtos/ecobag book love.png"
+            alt="Ecobag literária Book Love"><span class="collection-caption"><strong>Ecobags</strong><small>Leve seus
+              livros com você</small></span></a>
+        <a class="collection-card" href="colecoes.html#xicaras"><img src="produtos/xicara leitoras club.jpeg"
+            alt="Xícara Leitoras Club"><span class="collection-caption"><strong>Xícaras</strong><small>Para acompanhar a
+              leitura</small></span></a>
+        <a class="collection-card" href="colecoes.html#papelaria"><img src="produtos/adesivos.png"
+            alt="Adesivos literários"><span class="collection-caption"><strong>Papelaria</strong><small>Adesivos, diário
+              e mais</small></span></a>
+        <a class="collection-card" href="colecoes.html#acessorios"><img src="produtos/chaveiro fofo.png"
+            alt="Chaveiro literário fofo"><span class="collection-caption"><strong>Acessórios</strong><small>Pequenos
+              detalhes, muito amor</small></span></a>
       </div>
-
-      <article class="special-box">
-        <div class="special-copy">
-          <h2>Kit Floreios</h2>
-          <p>Reuni neste box uma ecobag de algodão, um chaveiro super fofo, um conjunto de 25 adesivos e uma xícara. Uma
-            boa companhia para a próxima leitura — ou um presente para alguém querido.</p>
-          <div class="special-actions"><a class="button button-orange" href="#produtos">Conhecer o box <span
-                class="arrow" aria-hidden="true"></span></a><strong>R$ 79,90</strong></div>
-        </div>
-        <img src="/FloreiosArt/produtos/KIT PROMOCIONAL.png"
-          alt="Kit de leitura artesanal com livros e flores em uma mesa">
-      </article>
+      <div class="center-action"><a class="button button-outline" href="colecoes.html">Ver todas as coleções <span
+            class="arrow" aria-hidden="true"></span></a></div>
     </section>
 
-    <section class="favorites section-shell" id="produtos">
+    <section class="favorites section-shell home-favorites">
       <div class="section-heading section-heading-row">
-        <div><span class="eyebrow plain">Da loja</span>
-          <h2>Nossos produtos</h2>
+        <div><span class="eyebrow plain">Escolhas especiais</span>
+          <h2>Um carinho para sua próxima leitura</h2>
+          <p>Conheça alguns dos queridinhos da loja.</p>
         </div>
       </div>
+      <div class="product-grid product-grid--featured" data-product-list="featured" aria-live="polite"></div>
+      <div class="center-action"><a class="button button-orange" href="produtos.html">Ver todos os produtos <span
+            class="arrow" aria-hidden="true"></span></a></div>
+    </section>
 
-      <div class="product-grid">
-
-        <!-- PRODUTOS-->
-
-        <article class="product-card">
-          <div class="product-image"><img src="/FloreiosArt/produtos/KIT PROMOCIONAL.png" alt="Eco bag book love"><span
-              class="product-tag">Mais vendido</span><span class="save-label">Salvar</span></div>
-          <div class="product-info">
-            <div class="product-meta"><span>KIT</span></div>
-            <h3>KIT Floreios</h3>
-            <div class="product-bottom"><strong>R$ 69,90</strong><a href="#newsletter">Ver</a></div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image"><img src="/FloreiosArt/produtos/ecobag book love.png" alt="Eco bag book love"><span
-              class="product-tag">Mais vendido</span><span class="save-label">Salvar</span></div>
-          <div class="product-info">
-            <div class="product-meta"><span>Eco bag</span></div>
-            <h3>Eco bag book love</h3>
-            <div class="product-bottom"><strong>R$ 42,00</strong><a href="#newsletter">Ver</a></div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image"><img src="/FloreiosArt/produtos/Ecobag “In My Reading Era”.png"
-              alt="Ilustração botânica em uma página de livro"><span class="save-label">Salvar</span></div>
-          <div class="product-info">
-            <div class="product-meta"><span>Eco bag</span></div>
-            <h3>Eco bag In My Reading Era</h3>
-            <div class="product-bottom"><strong>R$ 42,00</strong><a href="#newsletter">Ver</a></div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image">
-            <img src="/FloreiosArt/produtos/chaveiro fofo.png" alt="Marcadores e livros dispostos em uma mesa"
-              style="width: 80%;"><span class="save-label">Salvar</span>
-          </div>
-          <div class="product-info">
-            <div class="product-meta"><span>Chaveiro</span></div>
-            <h3>Chaveiro</h3>
-            <div class="product-bottom"><strong>R$ 12,00</strong><a href="#newsletter">Ver</a></div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image"><img src="/FloreiosArt/produtos/xicara book.jpeg"
-              alt="Marcadores e livros dispostos em uma mesa"><span class="save-label">Salvar</span></div>
-          <div class="product-info">
-            <div class="product-meta"><span>Xícaras</span></div>
-            <h3>Xícara Book</h3>
-            <div class="product-bottom"><strong>R$ 24,00</strong><a href="#newsletter">Ver</a></div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image"><img src="/FloreiosArt/produtos/xicara leitoras club.jpeg"
-              alt="Marcadores e livros dispostos em uma mesa"><span class="save-label">Salvar</span></div>
-          <div class="product-info">
-            <div class="product-meta"><span>Xícaras</span></div>
-            <h3>Xícara Leitoras Club</h3>
-            <div class="product-bottom"><strong>R$ 24,00</strong><a href="#newsletter">Ver</a></div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image"><img src="/FloreiosArt/produtos/adesivos.png"
-              alt="Marcadores e livros dispostos em uma mesa"><span class="save-label">Salvar</span></div>
-          <div class="product-info">
-            <div class="product-meta"><span>Adesivos</span></div>
-            <h3>Adesivos</h3>
-            <div class="product-bottom"><strong>R$ 10,50</strong><a href="#newsletter">Ver</a></div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image"><img src="/FloreiosArt/produtos/skin card.png"
-              alt="Marcadores e livros dispostos em uma mesa"><span class="save-label">Salvar</span></div>
-          <div class="product-info">
-            <div class="product-meta"><span>Skincard</span></div>
-            <h3>Skincard</h3>
-            <div class="product-bottom"><strong>R$ 12,50</strong><a href="#newsletter">Ver</a></div>
-          </div>
-        </article>
-      </div>
-
-      <article class="about" id="sobre">
-        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1000&q=85"
-          alt="Leitora aproveitando um momento tranquilo com seu livro">
-        <div class="about-copy"><span class="eyebrow plain">Um pouco sobre a Floreios Art</span>
-          <h2>Feito por uma leitora, para acompanhar outras leitoras</h2>
-          <p>A Floreios Art surgiu da paixão pessoal pela leitura e pelo universo literário. Inicialmente, a produção de
-            produtos literários começou como um hobby, mas, com o interesse de amigas e indicações de outros leitores,
-            surgiu a oportunidade de transformar essa ideia em um negócio.</p>
-          <p>Assim, a antiga papelaria personalizada passou por uma reformulação, tornando-se uma loja dedicada a
-            produtos e acessórios literários. Após pesquisas, testes e planejamento, a Floreios Art desenvolveu sua nova
-            identidade, com o propósito de oferecer itens que tornem a experiência da leitura ainda mais especial,
-            permitindo que os leitores expressem seu amor pelos livros de maneira criativa e personalizada.</p>
-
+    <section class="home-kit section-shell">
+      <article class="special-box">
+        <div class="special-copy"><span class="eyebrow pink">Um presente cheio de histórias</span>
+          <h2>Kit Floreios</h2>
+          <p>Uma ecobag, um chaveiro, adesivos e uma xícara para acompanhar seus próximos capítulos. Também é uma ideia
+            delicada para presentear alguém que ama ler.</p>
+          <div class="special-actions"><a class="button button-orange" href="kits.html">Conhecer os kits <span
+                class="arrow" aria-hidden="true"></span></a><strong>Consulte disponibilidade</strong></div>
+        </div>
+        <img src="produtos/KIT PROMOCIONAL.png" alt="Kit Floreios com acessórios para leitura">
       </article>
     </section>
 
-
-    <section class="newsletter" id="newsletter">
-      <h2>Uma cartinha da Floreios, de vez em quando?</h2>
-      <p>Deixe seu e-mail para receber novidades da loja, lançamentos e conversas sobre leitura.<br
-          class="desktop-break"> Sem excesso de mensagens.</p>
-      <form action="#newsletter" method="get"><label class="visually-hidden" for="email">Seu e-mail</label><input
-          id="email" type="email" placeholder="Seu e-mail" required><button class="button button-orange"
-          type="submit">Quero receber</button></form><small>Você pode sair da lista quando quiser.</small>
+    <section class="home-story section-shell">
+      <img src="produtos/WhatsApp Image 2026-08-30 at 13.02.33.jpeg"
+        alt="Xícara literária feita para acompanhar um momento de leitura">
+      <div class="home-story-copy"><span class="eyebrow plain">Um pouco sobre a Floreios Art</span>
+        <h2>Feito por uma leitora, para acompanhar outras leitoras</h2>
+        <p>A Floreios nasceu da paixão pelos livros e da vontade de transformar esse amor em objetos que façam parte da
+          rotina de leitura. Cada escolha é feita para trazer um pouco mais de afeto aos seus momentos favoritos.</p><a
+          class="text-link" href="sobre.html">Conheça nossa história <span aria-hidden="true">→</span></a>
+      </div>
     </section>
+
+    <section class="newsletter section-shell"><span class="eyebrow pink">Vamos conversar?</span>
+      <h2>Novidades e lançamentos da Floreios</h2>
+      <p>Acompanhe a loja no Instagram para descobrir novas artes, consultar disponibilidade e falar com a gente sobre
+        seu pedido.</p><a class="button button-orange" href="https://www.instagram.com/floreiosart/" target="_blank"
+        rel="noopener noreferrer">Seguir @floreiosart <span class="arrow" aria-hidden="true"></span></a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-brand"><a class="footer-logo" href="#inicio">Floreios Art</a>
-      <p>Papelaria feita para acompanhar boas histórias e os momentos tranquilos de leitura.</p>
-      <div class="social-links">
-        <a href="https://www.instagram.com/floreiosart/" target="_blank" aria-label="Instagram"><img
-            src="https://static.vecteezy.com/system/resources/thumbnails/038/447/961/small/ai-generated-instagram-logo-free-png.png"
-            alt="instagram floreios"></a>
-      </div>
+    <div class="footer-brand"><a class="footer-logo" href="index.html"><img src="logos/logoprincipal.png"
+          alt="Floreios Art"></a>
+      <p>Papelaria feita para acompanhar boas histórias e os momentos tranquilos de leitura.</p><a class="footer-social"
+        href="https://www.instagram.com/floreiosart/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
     </div>
-    <div class="footer-column"><strong>Menu</strong><a href="#inicio">Início</a><a href="#colecoes">Coleções
-        Completas</a><a href="#produtos">Personalizados</a><a href="#sobre">Sobre Nós</a></div>
-    <div class="footer-column"><strong>Suporte</strong><a href="#newsletter">Política de Envio</a><a
-        href="#newsletter">Prazos de Entrega</a><a href="#newsletter">Trocas e Devoluções</a><a
-        href="#newsletter">Dúvidas Frequentes</a><a href="#newsletter">Fale Conosco</a></div>
-    <div class="footer-column"><strong>Categorias</strong><a href="#colecoes">Ecobags</a><a
-        href="#colecoes">Chaveiro</a><a href="#colecoes">Xícaras</a><a href="#colecoes">Adesivos</a>
-      <a href="#colecoes">Skincard</a><a href="#colecoes">Kit Floreios</a>
-    </div>
-    <div class="footer-bottom"><span>© 2026 Floreios Art. Todos os direitos reservados. Feito com amor em Praia Grande -
-        SP.</span>
-      <div><a href="#inicio">Privacidade</a><a href="#inicio">Termos de Uso</a></div>
-    </div>
+    <div class="footer-column"><strong>Explore</strong><a href="index.html">Início</a><a
+        href="colecoes.html">Coleções</a><a href="produtos.html">Todos os produtos</a><a href="kits.html">Kits &
+        presentes</a></div>
+    <div class="footer-column"><strong>A Floreios</strong><a href="sobre.html">Nossa história</a><a
+        href="contato.html">Contato e dúvidas</a><a href="contato.html#envios">Envios</a><a
+        href="contato.html#faq">Perguntas frequentes</a></div>
+    <div class="footer-bottom"><span>© 2026 Floreios Art · Feito com amor em Praia Grande, SP.</span><a
+        href="contato.html">Fale com a gente</a></div>
   </footer>
-  <script>
-    (() => {
-      const slides = Array.from(document.querySelectorAll("#inicio .banner-slide"));
-      if (slides.length < 2) return;
-
-      let activeIndex = slides.findIndex((slide) => slide.classList.contains("active"));
-      if (activeIndex < 0) activeIndex = 0;
-
-      window.setInterval(() => {
-        slides[activeIndex].classList.remove("active");
-        slides[activeIndex].setAttribute("aria-hidden", "true");
-        activeIndex = (activeIndex + 1) % slides.length;
-        slides[activeIndex].classList.add("active");
-        slides[activeIndex].setAttribute("aria-hidden", "false");
-      }, 5000);
-    })();
-  </script>
+  <script src="carousel.js" defer></script>
 </body>
 
 </html>
