@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff2eb">
+  <meta name="description"
+    content="Explore todos os produtos literários da Floreios Art: ecobags, xícaras, acessórios, adesivos e papelaria.">
+  <title>Produtos — Floreios Art</title>
+  <link rel="icon" href="logos/selofloreios.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="store.js" defer></script>
+</head>
+
+<body data-page="produtos">
+  <header class="site-header"><a class="brand" href="index.html" aria-label="Floreios Art, início"><img
+        src="logos/logoprincipal.png" alt="Floreios Art" class="brand-name"></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a
+        href="colecoes.html">Coleções</a><a class="active" href="produtos.html" aria-current="page">Produtos</a><a
+        href="kits.html">Kits & presentes</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a></nav>
+    <div class="header-actions"><a class="header-contact" href="https://www.instagram.com/floreiosart/" target="_blank"
+        rel="noopener noreferrer">Fale com a gente <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <main>
+    <section class="page-intro section-shell"><span class="eyebrow pink">Feitos para quem ama ler</span>
+      <h1>Produtos Floreios</h1>
+      <p>Encontre um novo detalhe para acompanhar seus livros. Consulte pelo Instagram a disponibilidade, as opções e os
+        valores atualizados.</p>
+      <nav class="breadcrumbs" aria-label="Você está em"><a href="index.html">Início</a><span
+          aria-hidden="true">/</span><span>Produtos</span></nav>
+    </section>
+    <section class="catalog section-shell" aria-labelledby="catalog-title">
+      <div class="catalog-topline">
+        <div>
+          <h2 id="catalog-title">Nosso catálogo</h2>
+          <p data-product-count aria-live="polite">Carregando produtos…</p>
+        </div><a class="text-link" href="contato.html">Como comprar <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="catalog-toolbar"><label class="catalog-search"><span class="visually-hidden">Buscar produto</span><svg
+            viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.3"></circle>
+            <path d="m16 16 4.1 4.1"></path>
+          </svg><input type="search" data-product-search placeholder="Buscar por produto ou categoria"
+            autocomplete="off"></label>
+        <label class="filter-label">Categoria <select data-product-category>
+            <option value="">Todas as categorias</option>
+            <option value="Ecobags">Ecobags</option>
+            <option value="Xícaras">Xícaras</option>
+            <option value="Papelaria">Papelaria</option>
+            <option value="Acessórios">Acessórios</option>
+            <option value="Kits">Kits</option>
+          </select></label>
+      </div>
+      <div class="product-grid catalog-grid" data-product-list="all" aria-live="polite"></div>
+      <div class="empty-state" data-product-empty hidden><strong>Não encontramos esse produto.</strong><span>Tente outra
+          busca ou escolha uma categoria diferente.</span></div>
+      <p class="catalog-note">As imagens apresentam referências dos produtos. Consulte no Instagram as opções
+        disponíveis, os valores, os prazos e o frete para o seu endereço.</p>
+    </section>
+    <section class="catalog-help section-shell">
+      <div><span class="eyebrow green">Estamos por aqui</span>
+        <h2>Encontrou seu favorito?</h2>
+        <p>Chame a Floreios no Instagram para tirar dúvidas e combinar seu pedido com carinho.</p>
+      </div><a class="button button-orange" href="https://www.instagram.com/floreiosart/" target="_blank"
+        rel="noopener noreferrer">Consultar pelo Instagram <span class="arrow" aria-hidden="true"></span></a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-brand"><a class="footer-logo" href="index.html"><img src="logos/logoprincipal.png"
+          alt="Floreios Art"></a>
+      <p>Papelaria feita para acompanhar boas histórias e os momentos tranquilos de leitura.</p><a class="footer-social"
+        href="https://www.instagram.com/floreiosart/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+    </div>
+    <div class="footer-column"><strong>Explore</strong><a href="index.html">Início</a><a
+        href="colecoes.html">Coleções</a><a href="produtos.html">Todos os produtos</a><a href="kits.html">Kits &
+        presentes</a></div>
+    <div class="footer-column"><strong>A Floreios</strong><a href="sobre.html">Nossa história</a><a
+        href="contato.html">Contato e dúvidas</a><a href="contato.html#envios">Envios</a><a
+        href="contato.html#faq">Perguntas frequentes</a></div>
+    <div class="footer-bottom"><span>© 2026 Floreios Art · Feito com amor em Praia Grande, SP.</span><a
+        href="contato.html">Fale com a gente</a></div>
+  </footer>
+</body>
+
+</html>
