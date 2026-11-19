@@ -1565,6 +1565,139 @@ h1, h2, h3 {
 .faq-list details[open] summary::after { content: "−"; }
 .faq-list details p { max-width: 760px; margin: 0; padding: 0 32px 18px 0; color: #786b64; font-size: 12px; line-height: 1.8; }
 
+/* Alternância entre os temas claro e escuro */
+.theme-toggle {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid #f0d9d0;
+  border-radius: 50%;
+  color: #775147;
+  background: #fff9f5;
+  cursor: pointer;
+  transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.theme-toggle:hover { transform: translateY(-1px); border-color: #f3b5ce; background: #fff0f6; }
+.theme-toggle:focus-visible { outline: 2px solid #bd6f8f; outline-offset: 3px; }
+.theme-toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.theme-toggle__sun { display: none; }
+
+body.tema-escuro {
+  --ink: #f6e9e3;
+  --muted: #c7b5ae;
+  --paper: #211b1b;
+  --cream: #302526;
+  --pink: #402d38;
+  --pink-deep: #d581ad;
+  --orange: #b96d35;
+  --green: #668b4c;
+  --white: #2b2323;
+  color-scheme: dark;
+}
+body.tema-escuro .theme-toggle { border-color: #66504a; color: #f1c779; background: #3b302f; }
+body.tema-escuro .theme-toggle:hover { border-color: #d58cac; background: #49333e; }
+body.tema-escuro .theme-toggle__moon { display: none; }
+body.tema-escuro .theme-toggle__sun { display: block; }
+body.tema-escuro .site-header,
+body.tema-escuro .product-card,
+body.tema-escuro .quote-card,
+body.tema-escuro .gift-grid article,
+body.tema-escuro .value-grid article,
+body.tema-escuro .catalog-search,
+body.tema-escuro .filter-label,
+body.tema-escuro .empty-state,
+body.tema-escuro .steps-grid article,
+body.tema-escuro .button-white,
+body.tema-escuro .newsletter input,
+body.tema-escuro .social-links a,
+body.tema-escuro .benefit-icon,
+body.tema-escuro .slider-arrows span { background-color: var(--white); }
+body.tema-escuro .home-collections,
+body.tema-escuro .page-intro,
+body.tema-escuro .collections,
+body.tema-escuro .testimonials,
+body.tema-escuro .gift-guide,
+body.tema-escuro .values-section,
+body.tema-escuro .faq-section { background-color: var(--cream); }
+body.tema-escuro .benefits,
+body.tema-escuro .home-favorites,
+body.tema-escuro .special-box,
+body.tema-escuro .newsletter,
+body.tema-escuro .catalog-help,
+body.tema-escuro .collection-bottom,
+body.tema-escuro .contact-note { background-color: var(--pink); }
+body.tema-escuro .home-story,
+body.tema-escuro .contact-card,
+body.tema-escuro .empty-state { background-color: #302727; }
+body.tema-escuro .site-footer { background-color: #2a2222; }
+body.tema-escuro .main-nav { background: transparent; }
+body.tema-escuro .main-nav a,
+body.tema-escuro .header-actions a,
+body.tema-escuro .header-contact,
+body.tema-escuro .button-outline,
+body.tema-escuro .faq-list summary,
+body.tema-escuro .kit-includes li,
+body.tema-escuro .social-links a { color: var(--ink); }
+body.tema-escuro .main-nav a:hover,
+body.tema-escuro .main-nav a.active { color: var(--orange); }
+body.tema-escuro .header-contact,
+body.tema-escuro .button-outline,
+body.tema-escuro .catalog-search,
+body.tema-escuro .filter-label,
+body.tema-escuro .gift-grid article,
+body.tema-escuro .value-grid article,
+body.tema-escuro .newsletter input,
+body.tema-escuro .faq-list details,
+body.tema-escuro .product-bottom,
+body.tema-escuro .footer-bottom { border-color: #50403d; }
+body.tema-escuro .header-contact { background: #382c2a; }
+body.tema-escuro .header-contact:hover { border-color: #8d5b70; background: #49333e; }
+body.tema-escuro .hero-copy > p,
+body.tema-escuro .hero-notes,
+body.tema-escuro .benefit small,
+body.tema-escuro .special-copy p,
+body.tema-escuro .about-copy > p,
+body.tema-escuro .about-stats span,
+body.tema-escuro .quote-card > p,
+body.tema-escuro .newsletter p,
+body.tema-escuro .newsletter > small,
+body.tema-escuro .footer-brand p,
+body.tema-escuro .footer-column a,
+body.tema-escuro .footer-bottom,
+body.tema-escuro .page-intro > p,
+body.tema-escuro .catalog-topline p,
+body.tema-escuro .catalog-note,
+body.tema-escuro .catalog-help p,
+body.tema-escuro .collection-bottom p,
+body.tema-escuro .collection-feature-copy p,
+body.tema-escuro .kit-detail-copy > p,
+body.tema-escuro .kit-detail-copy .muted-copy,
+body.tema-escuro .gift-grid p,
+body.tema-escuro .value-grid p,
+body.tema-escuro .story-page-copy p,
+body.tema-escuro .contact-card-copy > p,
+body.tema-escuro .contact-card-copy > small,
+body.tema-escuro .contact-note p,
+body.tema-escuro .steps-grid p,
+body.tema-escuro .faq-list details p { color: var(--muted); }
+body.tema-escuro .catalog-topline p,
+body.tema-escuro .breadcrumbs,
+body.tema-escuro .catalog-search input::placeholder { color: var(--muted); }
+body.tema-escuro .catalog-search input,
+body.tema-escuro .filter-label select { color: var(--ink); }
+body.tema-escuro .product-meta { color: var(--muted); }
+body.tema-escuro .eyebrow.pink { color: #f0b7d0; background: #513746; }
+body.tema-escuro .eyebrow.plain { color: #d5b2c0; }
+body.tema-escuro .button-orange { background: var(--orange); }
+body.tema-escuro .catalog-grid .product-image { background: #342927; }
+body.tema-escuro .product-bottom { border-top-color: #50403d; }
+body.tema-escuro .faq-list summary { color: var(--ink); }
+body.tema-escuro .footer-column strong { color: var(--ink); }
+
 @media (max-width: 1050px) {
   .site-header { gap: 15px; padding-inline: 22px; }
   .brand { flex-basis: 125px; }
@@ -1577,7 +1710,7 @@ h1, h2, h3 {
   .site-header { position: relative; min-height: 0; flex-wrap: wrap; justify-content: center; gap: 0; padding: 10px 0 0; }
   .brand { flex: 0 0 auto; min-height: 54px; }
   .brand-name { width: 140px; }
-  .header-actions { position: absolute; top: 18px; right: 15px; }
+  .header-actions { position: absolute; top: 18px; right: 15px; left: 15px; justify-content: space-between; gap: 8px; }
   .header-contact { padding: 7px 9px; font-size: 9px; }
   .main-nav { flex: 1 0 100%; justify-content: flex-start; gap: 22px; overflow-x: auto; padding: 0 18px; scrollbar-width: none; white-space: nowrap; font-size: 11px; }
   .main-nav::-webkit-scrollbar { display: none; }
